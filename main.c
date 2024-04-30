@@ -42,7 +42,7 @@ int main()
 
          FacturaPtr f=constructorFactura(1,"22-3-2023",getNombreCliente( c1),l);
          mostraFactura(f);
-
+            mostrarDetalles(l);
 
     return 0;
 }

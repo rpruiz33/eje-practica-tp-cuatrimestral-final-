@@ -16,4 +16,5 @@ int removerPrincipio(ListaPtr l);
 int removerFinal(ListaPtr l);
 void mostrarDetalles(ListaPtr l);
 NodoPtr getPrimeroNodo(ListaPtr n);
+void * getDato(NodoPtr n);
 #endif // LISTA_H_INCLUDED

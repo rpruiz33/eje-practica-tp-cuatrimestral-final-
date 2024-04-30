@@ -23,7 +23,7 @@ p->cantidad=cantidad;
 p->precio=precio;
 
 return p;
-};
+}
 void destructorProducto(ProductoPtr p){
 free (p);
 

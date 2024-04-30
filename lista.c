@@ -69,29 +69,13 @@ NodoPtr no=crearNodo(dato);
 
     return 1;
 }
-
-void mostrarDetalles(ListaPtr l) {
-    if (l == NULL || l->primero == NULL) {
-        printf("La lista de detalles está vacía.\n");
-        return;
-    }
-
-    NodoPtr actual = l->primero;
-while (actual != NULL) {
-    printf("********************\n");
-    printf("Dirección del nodo: %p\n", (void*)actual);
-    printf("Dato almacenado: %p\n", (void*)actual->dato); // Verificar la dirección almacenada
-   printf("El numero de detalle es -> %d\n", getNroDetalle((DetallePtr)actual->dato));
-    printf("El nombre del producto es -> %s\n", getNombreProducto((ProductoPtr)actual->dato));
-    printf("La cantidad es -> %d\n", getCantidad((ProductoPtr)actual->dato));
-    printf("El precio del producto es -> %.2f\n", getPrecio((ProductoPtr)actual->dato));
-    printf("El precio total del detalle es -> %.2f\n", getPrecioTotal((DetallePtr)actual->dato));
-
-    actual = actual->proximo;
+NodoPtr getNodo(NodoPtr k){
+return k;
 }
 
+void * getDato(NodoPtr n){
+return n->dato;
 }
-
 int removerPrincipio(ListaPtr l);
 int removerFinal(ListaPtr l);
 
@@ -99,6 +83,8 @@ int removerFinal(ListaPtr l);
 
 NodoPtr getPrimeroNodo(ListaPtr n){
 return n->primero;
-
+}
+NodoPtr getProximo(NodoPtr l){
+return l->proximo;
 
 }

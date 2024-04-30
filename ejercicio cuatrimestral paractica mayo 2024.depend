@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1714503067 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\main.c
+1714510628 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\main.c
 	<stdio.h>
 	<stdlib.h>
 	"lista.h"
@@ -31,7 +31,7 @@
 1714506521 c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\detalle.h
 	"producto.h"
 
-1714504368 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\factura.c
+1714512316 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\factura.c
 	"lista.h"
 	"producto.h"
 	"factura.h"
@@ -43,7 +43,7 @@
 
 1714501300 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\productos.c
 
-1714509047 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\lista.c
+1714512594 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\lista.c
 	<stdio.h>
 	<stdlib.h>
 	"lista.h"
@@ -52,7 +52,7 @@
 	"factura.h"
 	"producto.h"
 
-1714509030 c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\lista.h
+1714512015 c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\lista.h
 	"detalle.h"
 
 1714501638 c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\factura.h
@@ -61,7 +61,7 @@
 
 1714506195 c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\producto.h
 
-1714505943 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\producto.c
+1714511243 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\producto.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
