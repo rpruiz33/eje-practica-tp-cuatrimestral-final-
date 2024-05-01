@@ -1,90 +1,79 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "lista.h"
-#include "cliente.h"
-#include "detalle.h"
-#include "factura.h"
-#include "producto.h"
-struct Nodo{
-void* dato;
-NodoPtr proximo;
-};
 
-struct Lista{
-NodoPtr primero;
-NodoPtr ultimo;
-};
+ListaPtr crearLista() {
+    ListaPtr l = (ListaPtr)malloc(sizeof(struct Lista));
+    if (l == NULL) {
 
-NodoPtr crearNodo(DetallePtr dato){
-    if (dato==NULL){
         return NULL;
     }
-
-
-NodoPtr no=malloc (sizeof(struct Nodo));
-no->dato=dato;
-no->proximo=NULL;
-return no;
-
-}
-ListaPtr crearLista(){
-
-ListaPtr l =(ListaPtr) malloc (sizeof(struct Lista));
-l->primero=NULL;
-
-return l;
-
+    l->primero = NULL;
+    l->ultimo = NULL;
+    return l;
 }
 
-int insertarListaPrincipio(ListaPtr l , void * dato){
-if(dato==NULL){
-    return 0;
-}
-NodoPtr no=crearNodo(dato);
+NodoPtr crearNodo(void* dato) {
+    NodoPtr nodo = (NodoPtr)malloc(sizeof(struct Nodo));
+    if (nodo == NULL) {
 
-
-l->primero=no;
-return 1;
-}
-int insertarAlFinal(ListaPtr l, void * dato){
-
-if(dato==NULL){
-    return 0;
-}
-NodoPtr no=crearNodo(dato);
-
-
-    if (l->primero == NULL) {
-        // Si la lista está vacía, el nuevo nodo será el primero y el último
-        l->primero = no;
-        l->ultimo = no;
-    } else {
-        // Si la lista no está vacía, buscar el último nodo actual
-        NodoPtr ultimo = l->ultimo;
-        // Enlazar el último nodo actual al nuevo nodo
-        ultimo->proximo = no;
-        // Ahora el nuevo nodo se convierte en el último nodo de la lista
-        l->ultimo = no;
+        return NULL;
     }
+    nodo->dato = dato;
+    nodo->proximo = NULL;
+    return nodo;
+}
 
+int insertarAlFinal(ListaPtr l, void* dato) {
+    if (l == NULL || dato == NULL) {
+        return 0;
+    }
+    NodoPtr nodo = crearNodo(dato);
+    if (l->primero == NULL) {
+        l->primero = nodo;
+        l->ultimo = nodo;
+    } else {
+        l->ultimo->proximo = nodo;
+        l->ultimo = nodo;
+    }
     return 1;
 }
-NodoPtr getNodo(NodoPtr k){
-return k;
+
+NodoPtr getPrimeroNodo(ListaPtr l) {
+    return l->primero;
 }
 
-void * getDato(NodoPtr n){
-return n->dato;
+NodoPtr getProximo(NodoPtr nodo) {
+    if (nodo != NULL) {
+        return nodo->proximo;
+    }
+    return NULL;
 }
-int removerPrincipio(ListaPtr l);
-int removerFinal(ListaPtr l);
 
-
-
-NodoPtr getPrimeroNodo(ListaPtr n){
-return n->primero;
+void* getDato(NodoPtr nodo) {
+    if (nodo != NULL) {
+        return nodo->dato;
+    }
+    return NULL;
 }
-NodoPtr getProximo(NodoPtr l){
-return l->proximo;
 
+void mostrarDetalles(ListaPtr l) {
+    if (l == NULL || l->primero == NULL) {
+
+        return;
+    }
+
+    NodoPtr actual = l->primero;
+    while (actual != NULL) {
+        printf("********************\n");
+        DetallePtr detalle = (DetallePtr)getDato(actual);
+
+        printf("El numero de detalle es -> %d\n", getNroDetalle(detalle));
+        printf("El nombre del producto es -> %s\n", getNombreProducto(detalle->producto));
+        printf("La cantidad es -> %d\n", detalle->cantidad);
+        printf("El precio del producto es -> %.2f\n", getPrecio(detalle->producto));
+        printf("El precio total del detalle es -> %.2f\n", getPrecioTotal(detalle));
+
+        actual = getProximo(actual);
+    }
 }
