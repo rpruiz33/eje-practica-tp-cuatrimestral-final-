@@ -1,18 +1,16 @@
-#ifndef PRODUCTO_H
-#define PRODUCTO_H
+#ifndef PRODUCTO_H_INCLUDED
+#define PRODUCTO_H_INCLUDED
 
-typedef struct Producto {
-    char nombre[30];
-    float precio;
-    char codigo[30];
-    int cantidad;
-} *ProductoPtr;
+struct Producto;
 
-ProductoPtr construirProducto(char nombre[30], float precio, char codigo[30], int cantidad);
+typedef struct Producto *ProductoPtr;
+ProductoPtr construirProducto(char n[30],float precio,char codigo[30],int cantidad);
 void destructorProducto(ProductoPtr p);
-void mostrarProducto(ProductoPtr p);
 float getPrecio(ProductoPtr p);
 int getCantidad(ProductoPtr p);
+//ProductoPtr getProducto(ProductoPtr p);
 char* getNombreProducto(ProductoPtr p);
 
-#endif
+void mostrarProducto(ProductoPtr p);
+
+#endif // PRODUCTO_H_INCLUDED

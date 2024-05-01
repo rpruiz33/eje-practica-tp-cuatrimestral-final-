@@ -1,40 +1,52 @@
+#include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include "producto.h"
 
-ProductoPtr construirProducto(char nombre[30], float precio, char codigo[30], int cantidad) {
-    ProductoPtr p = (ProductoPtr)malloc(sizeof(struct Producto));
-    if (p == NULL) {
+struct Producto{
+char nombre[30];
+float precio;
+char codigo[30];
+int cantidad;
 
-        return NULL;
-    }
-    strcpy(p->nombre, nombre);
-    p->precio = precio;
-    strcpy(p->codigo, codigo);
-    p->cantidad = cantidad;
-    return p;
+
+};
+
+
+
+ProductoPtr construirProducto(char n[30],float precio,char codigo[30],int cantidad){
+ProductoPtr p= malloc(sizeof(struct Producto));
+
+strcpy(p->codigo,codigo);
+strcpy(p->nombre, n);
+p->cantidad=cantidad;
+p->precio=precio;
+
+return p;
 }
+void destructorProducto(ProductoPtr p){
+free (p);
 
-void destructorProducto(ProductoPtr p) {
-    free(p);
+};
+
+void mostrarProducto(ProductoPtr p){
+
+printf("\nel codigo es %s\n",p->codigo);
+printf("\nel nombre del producto es %s\n",p->nombre);
+printf("\nLa cantidad  es %d\n",p->cantidad);
+printf("\nel precio del producto es %s\n",p->nombre);
 }
-
-void mostrarProducto(ProductoPtr p) {
-    printf("Nombre: %s\n", p->nombre);
-    printf("Precio: %.2f\n", p->precio);
-    printf("Código: %s\n", p->codigo);
-    printf("Cantidad disponible: %d\n", p->cantidad);
+float getPrecio(ProductoPtr p){
+return p->precio;
 }
-
-float getPrecio(ProductoPtr p) {
-    return p->precio;
+int getCantidad(ProductoPtr p){
+return p->cantidad;
 }
+/*ProductoPtr getProducto(ProductoPtr p){
 
-int getCantidad(ProductoPtr p) {
-    return p->cantidad;
-}
+return p;
+}*/
+char* getNombreProducto(ProductoPtr p){
+return p->nombre;
 
-char* getNombreProducto(ProductoPtr p) {
-    return p->nombre;
 }

@@ -1,56 +1,133 @@
 # depslib dependency file v1.0
-1714522285 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\main.c
+1714510628 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\main.c
 	<stdio.h>
 	<stdlib.h>
-	"cliente.h"
-	"producto.h"
-	"detalle.h"
 	"lista.h"
+	"cliente.h"
+	"detalle.h"
 	"factura.h"
+	"producto.h"
 
-1714522285 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\cliente.c
+1714504368 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\cliente.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
+	"lista.h"
 	"cliente.h"
+	"detalle.h"
+	"factura.h"
+	"producto.h"
 
-1714522285 c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\cliente.h
+1714503173 c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\cliente.h
 
-1714522285 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\detalle.c
+1714506465 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\detalle.c
 	<stdio.h>
 	<stdlib.h>
+	"producto.h"
 	"detalle.h"
 
 1714501300 c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\productos.h
 
-1714522285 c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\detalle.h
+1714506521 c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\detalle.h
 	"producto.h"
 
-1714522285 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\factura.c
+1714512316 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\factura.c
+	"lista.h"
+	"producto.h"
+	"factura.h"
+	"cliente.h"
+	"detalle.h"
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
-	"factura.h"
 
 1714501300 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\productos.c
 
-1714522285 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\lista.c
+1714512594 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\lista.c
 	<stdio.h>
 	<stdlib.h>
 	"lista.h"
+	"cliente.h"
+	"detalle.h"
+	"factura.h"
+	"producto.h"
 
-1714522285 c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\lista.h
+1714512015 c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\lista.h
 	"detalle.h"
 
-1714522285 c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\factura.h
+1714501638 c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\factura.h
+	"producto.h"
 	"lista.h"
-	"cliente.h"
 
-1714522285 c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\producto.h
+1714506195 c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\producto.h
 
-1714522285 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\producto.c
+1714511243 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\ejercicio cuatrimestral paractica mayo 2024\producto.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"producto.h"
+
+1714569060 source:c:\users\beto\desktop\nueva carpeta (2)\eje-practica-tp-cuatrimestral-final-\cliente.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
+	"lista.h"
+	"cliente.h"
+	"detalle.h"
+	"factura.h"
+	"producto.h"
+
+1714570071 c:\users\beto\desktop\nueva carpeta (2)\eje-practica-tp-cuatrimestral-final-\lista.h
+	"detalle.h"
+
+1714572914 c:\users\beto\desktop\nueva carpeta (2)\eje-practica-tp-cuatrimestral-final-\detalle.h
+	"producto.h"
+
+1714569600 c:\users\beto\desktop\nueva carpeta (2)\eje-practica-tp-cuatrimestral-final-\producto.h
+
+1714568976 c:\users\beto\desktop\nueva carpeta (2)\eje-practica-tp-cuatrimestral-final-\cliente.h
+
+1714568976 c:\users\beto\desktop\nueva carpeta (2)\eje-practica-tp-cuatrimestral-final-\factura.h
+	"producto.h"
+	"lista.h"
+
+1714573189 source:c:\users\beto\desktop\nueva carpeta (2)\eje-practica-tp-cuatrimestral-final-\detalle.c
+	<stdio.h>
+	<stdlib.h>
+	"detalle.h"
+	"producto.h"
+
+1714569816 source:c:\users\beto\desktop\nueva carpeta (2)\eje-practica-tp-cuatrimestral-final-\factura.c
+	"lista.h"
+	"producto.h"
+	"factura.h"
+	"cliente.h"
+	"detalle.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1714573244 source:c:\users\beto\desktop\nueva carpeta (2)\eje-practica-tp-cuatrimestral-final-\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+	"cliente.h"
+	"detalle.h"
+	"factura.h"
+	"producto.h"
+
+1714568976 source:c:\users\beto\desktop\nueva carpeta (2)\eje-practica-tp-cuatrimestral-final-\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+	"cliente.h"
+	"detalle.h"
+	"factura.h"
+	"producto.h"
+
+1714569726 source:c:\users\beto\desktop\nueva carpeta (2)\eje-practica-tp-cuatrimestral-final-\producto.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
 	"producto.h"
 

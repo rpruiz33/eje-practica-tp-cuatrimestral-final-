@@ -1,13 +1,9 @@
-#ifndef CLIENTE_H
-#define CLIENTE_H
+#ifndef CLIENTE_H_INCLUDED
+#define CLIENTE_H_INCLUDED
 
-typedef struct Cliente {
-    int dni;
-    char nombre[30];
-} *ClientePtr;
-
+struct Cliente ;
+typedef struct Cliente * ClientePtr;
 ClientePtr construirCliente(int dni, char nombre[30]);
 void destructorCliente(ClientePtr c);
 char* getNombreCliente(ClientePtr c);
-
-#endif
+#endif // CLIENTE_H_INCLUDED

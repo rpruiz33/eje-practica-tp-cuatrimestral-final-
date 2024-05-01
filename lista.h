@@ -1,24 +1,21 @@
-#ifndef LISTA_H
-#define LISTA_H
+#ifndef LISTA_H_INCLUDED
+#define LISTA_H_INCLUDED
 
 #include "detalle.h"
+struct Nodo;
+typedef struct Nodo *NodoPtr;
+struct Lista;
+typedef struct Lista *ListaPtr;
 
-typedef struct Nodo {
-    void* dato;
-    struct Nodo* proximo;
-} *NodoPtr;
-
-typedef struct Lista {
-    NodoPtr primero;
-    NodoPtr ultimo;
-} *ListaPtr;
-
+NodoPtr crearNodo(DetallePtr dato);
 ListaPtr crearLista();
-NodoPtr crearNodo(void* dato);
-int insertarAlFinal(ListaPtr l, void* dato);
-NodoPtr getPrimeroNodo(ListaPtr l);
-NodoPtr getProximo(NodoPtr nodo);
-void* getDato(NodoPtr nodo);
-void mostrarDetalles(ListaPtr l);
 
-#endif
+int insertarListaPrincipio(ListaPtr l , void * dato);
+int insertarAlFinal(ListaPtr l, void* dato);
+int removerPrincipio(ListaPtr l);
+int removerFinal(ListaPtr l);
+void mostrarDetalles(ListaPtr l);
+NodoPtr getPrimeroNodo(ListaPtr n);
+void * getDato(NodoPtr n);
+NodoPtr getProximo(NodoPtr nodo);
+#endif // LISTA_H_INCLUDED
