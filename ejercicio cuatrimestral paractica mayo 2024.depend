@@ -131,3 +131,131 @@
 	<stdlib.h>
 	"producto.h"
 
+1714582090 source:c:\users\casar\desktop\eje-practica-tp-cuatrimestral-final-\cliente.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lista.h"
+	"cliente.h"
+	"detalle.h"
+	"factura.h"
+	"producto.h"
+
+1714582090 c:\users\casar\desktop\eje-practica-tp-cuatrimestral-final-\lista.h
+	"detalle.h"
+
+1714582090 c:\users\casar\desktop\eje-practica-tp-cuatrimestral-final-\detalle.h
+	"producto.h"
+
+1714582090 c:\users\casar\desktop\eje-practica-tp-cuatrimestral-final-\producto.h
+
+1714582090 c:\users\casar\desktop\eje-practica-tp-cuatrimestral-final-\cliente.h
+
+1714582090 c:\users\casar\desktop\eje-practica-tp-cuatrimestral-final-\factura.h
+	"producto.h"
+	"lista.h"
+
+1714582090 source:c:\users\casar\desktop\eje-practica-tp-cuatrimestral-final-\detalle.c
+	<stdio.h>
+	<stdlib.h>
+	"detalle.h"
+	"producto.h"
+
+1714582090 source:c:\users\casar\desktop\eje-practica-tp-cuatrimestral-final-\factura.c
+	"lista.h"
+	"producto.h"
+	"factura.h"
+	"cliente.h"
+	"detalle.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1714582090 source:c:\users\casar\desktop\eje-practica-tp-cuatrimestral-final-\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+	"cliente.h"
+	"detalle.h"
+	"factura.h"
+	"producto.h"
+
+1714582090 source:c:\users\casar\desktop\eje-practica-tp-cuatrimestral-final-\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+	"cliente.h"
+	"detalle.h"
+	"factura.h"
+	"producto.h"
+
+1714582090 source:c:\users\casar\desktop\eje-practica-tp-cuatrimestral-final-\producto.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"producto.h"
+
+1714582090 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\eje-practica-tp-cuatrimestral-final-\cliente.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lista.h"
+	"cliente.h"
+	"detalle.h"
+	"factura.h"
+	"producto.h"
+
+1714582090 c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\eje-practica-tp-cuatrimestral-final-\lista.h
+	"detalle.h"
+
+1714582090 c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\eje-practica-tp-cuatrimestral-final-\detalle.h
+	"producto.h"
+
+1714582090 c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\eje-practica-tp-cuatrimestral-final-\producto.h
+
+1714582090 c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\eje-practica-tp-cuatrimestral-final-\cliente.h
+
+1714582090 c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\eje-practica-tp-cuatrimestral-final-\factura.h
+	"producto.h"
+	"lista.h"
+
+1714582090 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\eje-practica-tp-cuatrimestral-final-\detalle.c
+	<stdio.h>
+	<stdlib.h>
+	"detalle.h"
+	"producto.h"
+
+1714582090 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\eje-practica-tp-cuatrimestral-final-\factura.c
+	"lista.h"
+	"producto.h"
+	"factura.h"
+	"cliente.h"
+	"detalle.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1714585073 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\eje-practica-tp-cuatrimestral-final-\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+	"cliente.h"
+	"detalle.h"
+	"factura.h"
+	"producto.h"
+
+1714584131 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\eje-practica-tp-cuatrimestral-final-\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+	"cliente.h"
+	"detalle.h"
+	"factura.h"
+	"producto.h"
+
+1714582090 source:c:\users\casar\desktop\final-roberto andres ruiz pereira-dni-37762826\eje-practica-tp-cuatrimestral-final-\producto.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"producto.h"
+

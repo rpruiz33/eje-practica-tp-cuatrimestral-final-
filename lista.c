@@ -76,8 +76,44 @@ return k;
 void * getDato(NodoPtr n){
 return n->dato;
 }
-int removerPrincipio(ListaPtr l);
-int removerFinal(ListaPtr l);
+int removerPrincipio(ListaPtr l){
+if (l==NULL){
+    return 0;
+}
+NodoPtr no=l->primero;
+NodoPtr aux=no->proximo;
+free(no->dato);
+free(no);
+l->primero=aux;
+return 1;
+}
+int removerFinal(ListaPtr l) {
+    if (l == NULL || l->primero == NULL) {
+        return 0;
+    }
+
+    NodoPtr no = l->primero;
+    NodoPtr anterior = NULL;
+
+    while (no->proximo != NULL) {
+        anterior = no;
+        no = no->proximo;
+    }
+
+    free(no->dato);
+    free(no);
+
+    if (anterior != NULL) {
+        anterior->proximo = NULL;
+    } else {
+
+        l->primero = NULL;
+    }
+
+    l->ultimo = anterior;
+
+    return 1;
+}
 
 void mostrarDetalles(ListaPtr l) {
     if (l == NULL || l->primero == NULL) {

@@ -44,5 +44,15 @@ int main()
          mostraFactura(f);
             mostrarDetalles(l);
 
+            printf("\nremoviendoPrincipio\n");
+             removerPrincipio(l);
+
+            mostraFactura(f);
+            mostrarDetalles(l);
+             printf("\nremoviendofinal\n");
+
+             removerFinal(l);
+              mostraFactura(f);
+            mostrarDetalles(l);
     return 0;
 }
